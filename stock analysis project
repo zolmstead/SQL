@@ -30,3 +30,143 @@ CREATE TABLE sa_cash_flow_statement (
     Free_cash_flow TEXT,
     Net_income TEXT
 );
+
+--inserting basic info data--
+
+INSERT INTO sa_info VALUES (1,	'Berkshire Hathaway',	'Conglomerate',	'BRK-B', '9499.73%', 0.01,	'N/A');
+INSERT INTO sa_info VALUES (2,	'Allstate',	'Insurance', 'ALL', '13.08%',	7.64,	'1.98%');
+INSERT INTO sa_info VALUES (3,	'Progressive',	'Insurance',	'PGR',	'9.08%',	11.01, '5.15%');
+INSERT INTO sa_info VALUES (4,	'Intel Corp',	'Technology',	'INTC',	'8.97%',	11.15,	'2.48%');
+INSERT INTO sa_info VALUES (5,	'Axos Financial',	'Finance',	'AX',	'7.60%',	13.17,	'N/A');
+INSERT INTO sa_info VALUES (6,	'Walker & Dunlop',	'Real Estate',	'WD',	'7.01%',	14.14,	'1.61%');
+INSERT INTO sa_info VALUES (7,	'IBM',	'Technology',	'IBM',	'6.95%',	14.39,	'5.05%');
+INSERT INTO sa_info VALUES (8,	'Lockheed Martin',	'Travel/Transportation',	'LMT',	'6.72%',	14.89,	'3.01%');
+INSERT INTO sa_info VALUES (9,	'Bank of America',	'Finance',	'BAC',	'6.14%',	16.29,	'2.21%');
+INSERT INTO sa_info VALUES (10,	'Home Depot',	'Consumer Goods',	'HD',	'4.30%',	23.25,	'2.23%');
+INSERT INTO sa_info VALUES (11,	'Alibaba',	'Technology',	'BABA',	'4.08%',	24.51,	'N/A');
+INSERT INTO sa_info VALUES (12,	'Coca-Cola',	'Beverage',	'KO',	'3.78%',	26.47,	'3.21%');
+INSERT INTO sa_info VALUES (13,	'Proctor & Gamble',	'Consumer Goods',	'PG',	'3.77%',	26.54,	'2.28%');
+INSERT INTO sa_info VALUES (14,	'Church & Dwight',	'Consumer Goods',	'CHD',	'3.62%',	27.63,	'1.12%');
+INSERT INTO sa_info VALUES (15,	'Facebook',	'Technology',	'FB',	'3.49%',	28.67,	'N/A');
+INSERT INTO sa_info VALUES (16,	'Moodys',	'Finance',	'MCO',	'3.47%',	28.77,	'0.81%');
+INSERT INTO sa_info VALUES (17,	'Google',	'Technology',	'GOOG',	'2.95%',	33.90,	'N/A');
+INSERT INTO sa_info VALUES (18,	'Microsoft',	'Technology',	'MSFT',		'2.87%',	34.90,	'1.04%');
+INSERT INTO sa_info VALUES (19,	'Apple',	'Technology',	'AAPL', '2.50%',	39.98,	'0.64%');
+INSERT INTO sa_info VALUES (20,	'Visa',	'Finance',	'V', '2.30%',	43.55,	'0.60%');
+
+
+-inserting income statement data--
+
+INSERT INTO sa_income_statement VALUES (1, 'N/A', '12.84%');
+INSERT INTO sa_income_statement VALUES (2, 'N/A', '10.47%');
+INSERT INTO sa_income_statement VALUES (3, 'N/A', '9.12%');
+INSERT INTO sa_income_statement VALUES (4, '56.52%', '28.10%');
+INSERT INTO sa_income_statement VALUES (5, 'N/A', '32.00%');
+INSERT INTO sa_income_statement VALUES (6, '56.73%', '20.80%');
+INSERT INTO sa_income_statement VALUES (7, '48.18%', '10.54%');
+INSERT INTO sa_income_statement VALUES (8, '13.33%', '10.17%');
+INSERT INTO sa_income_statement VALUES (9, 'N/A', '20.52%');
+INSERT INTO sa_income_statement VALUES (10,	'34.03%', '9.94%');
+INSERT INTO sa_income_statement VALUES (11,	'43.32%', '22.54%');
+INSERT INTO sa_income_statement VALUES (12, '59.90%', '24.90%');
+INSERT INTO sa_income_statement VALUES (13,	'50.78%', '18.56%');
+INSERT INTO sa_income_statement VALUES (14,	'45.96%', '16.44%');
+INSERT INTO sa_income_statement VALUES (15,	'81.72%', '28.57%');
+INSERT INTO sa_income_statement VALUES (16,	'72.93%', '33.40%');
+INSERT INTO sa_income_statement VALUES (17,	'54.15%', '18.99%');
+INSERT INTO sa_income_statement VALUES (18,	'68.27%', '32.29%');
+INSERT INTO sa_income_statement VALUES (19,	'38.19%', '21.33%');
+INSERT INTO sa_income_statement VALUES (20,	'81.55%', '52.26%');
+
+SELECT * FROM sa_income_statement;
+
+--inserting balance sheet data--
+
+INSERT INTO sa_balance_sheet VALUES (1, '1.66',	    '4.38%',	'36.32%',	0.90,	'20%',	'8.28%');
+INSERT INTO sa_balance_sheet VALUES (2, '0.47',	    '3.83%',	'70.55%',	1.69,	'7%',   '17.70%');
+INSERT INTO sa_balance_sheet VALUES (3, '0.47',	    '7.07%',	'91.04%',	3.01,	'20%',	'31.42%');
+INSERT INTO sa_balance_sheet VALUES (4, '1.66',	    '11.13%',	'86.72%',	0.76,	'8%',	'29.50%');
+INSERT INTO sa_balance_sheet VALUES (5, 'N/A',	    '1.56%',	'59.87%',	8.85,	'20%',	'16.63%');
+INSERT INTO sa_balance_sheet VALUES (6, '1.17',	    '4.97%',    '15.89%',	1.58,	'12%',	'19.44%');
+INSERT INTO sa_balance_sheet VALUES (7, '1.05',	    '3.72%',	'13.63%',	0.69,	'3%',	'40.10%');
+INSERT INTO sa_balance_sheet VALUES (8, '1.34',	    '10.71%',	'57.34%',	14.19,	'16%',	'147.80%');
+INSERT INTO sa_balance_sheet VALUES (9, 'N/A',	    '0.75%',	'7.48%',	8.19,   '13%',	'7.23%');
+INSERT INTO sa_balance_sheet VALUES (10, '1.36',    '20.42%',	'37.03%',	0.88,	'10%',	'5514.35%');
+INSERT INTO sa_balance_sheet VALUES (11, '1.99',    '4.71%',	'94.56%',	0.59,	'30%',	'14.58%');
+INSERT INTO sa_balance_sheet VALUES (12, '0.76',	'6.64%',	'30.28%',	0.92,	'5%',	'40.78%');
+INSERT INTO sa_balance_sheet VALUES (13, '0.87',	'9.13%',	'55.59%',	0.49,	'3%',	'28.87%');
+INSERT INTO sa_balance_sheet VALUES (14, '1.49',	'8.64%',	'43.09%',	0.84,	'10%',	'27.04%');
+INSERT INTO sa_balance_sheet VALUES (15, '5.51',	'10.96%',	'220.05%',	0.32,	'20%',	'23.88%');
+INSERT INTO sa_balance_sheet VALUES (16, '2.49',	'14.65%',	'28.62%',	0.96,	'12%',	'152.33%');
+INSERT INTO sa_balance_sheet VALUES (17, '3.41',	'7.74%',	'213.53%',	0.37,   '12%',	'17.51%');
+INSERT INTO sa_balance_sheet VALUES (18, '2.53',	'12.10%',	'70.63%',	1.55,	'25%',  '41.40%');
+INSERT INTO sa_balance_sheet VALUES (19, '1.36',	'12.51%',	'59.21%',	3.96,	'Negative',		'73.69%');
+INSERT INTO sa_balance_sheet VALUES (20, '1.90',	'11.50%',	'59.24%',	1.23,	'7%',		'30.65%');
+
+SELECT * FROM sa_balance_sheet;
+
+
+--inserting cash flow data--
+
+INSERT INTO sa_cash_flow_statement VALUES (1,'Yes', 'Yes', 'Yes');
+INSERT INTO sa_cash_flow_statement VALUES (2,'Yes', 'Yes', 'Yes');
+INSERT INTO sa_cash_flow_statement VALUES (3,'Yes', 'Yes', 'Yes');
+INSERT INTO sa_cash_flow_statement VALUES (4,'Yes', 'Yes', 'Yes');
+INSERT INTO sa_cash_flow_statement VALUES (5,'Yes', 'Yes', 'Yes');
+INSERT INTO sa_cash_flow_statement VALUES (6,'Yes', 'No', 'No');
+INSERT INTO sa_cash_flow_statement VALUES (7,'Yes', 'Yes', 'Yes');
+INSERT INTO sa_cash_flow_statement VALUES (8,'Yes', 'Yes', 'Yes');
+INSERT INTO sa_cash_flow_statement VALUES (9,'Yes', 'Yes', 'Yes');
+INSERT INTO sa_cash_flow_statement VALUES (10,'Yes', 'Yes', 'Yes');
+INSERT INTO sa_cash_flow_statement VALUES (11,'Yes', 'Yes', 'Yes');
+INSERT INTO sa_cash_flow_statement VALUES (12,'Yes', 'Yes', 'Yes');
+INSERT INTO sa_cash_flow_statement VALUES (13,'Yes', 'Yes', 'Yes');
+INSERT INTO sa_cash_flow_statement VALUES (14,'Yes', 'Yes', 'Yes');
+INSERT INTO sa_cash_flow_statement VALUES (15,'Yes', 'Yes', 'Yes');
+INSERT INTO sa_cash_flow_statement VALUES (16,'Yes', 'Yes', 'Yes');
+INSERT INTO sa_cash_flow_statement VALUES (17,'Yes', 'Yes', 'Yes');
+INSERT INTO sa_cash_flow_statement VALUES (18,'Yes', 'Yes', 'Yes');
+INSERT INTO sa_cash_flow_statement VALUES (19,'Yes', 'Yes', 'Yes');
+INSERT INTO sa_cash_flow_statement VALUES (20,'Yes', 'Yes', 'Yes');
+
+SELECT * FROM sa_cash_flow_statement;
+
+
+
+--basic commands for the info table--
+
+SELECT * FROM sa_info
+ORDER BY ID;
+
+UPDATE sa_info
+SET Industry = 'Aerospace'
+WHERE ID = 8;
+
+UPDATE sa_info
+SET Company = 'Intel Corporation'
+WHERE ID = 6;
+
+SELECT DISTINCT * FROM sa_info
+WHERE Dividend_percent != 'N/A'
+AND Projected_ROI > '4.00%'
+ORDER BY Dividend_percent DESC;
+
+SELECT * FROM sa_info
+WHERE PE_Ratio BETWEEN 5 AND 15
+ORDER BY PE_Ratio ASC
+LIMIT 5;
+
+SELECT * FROM sa_info
+WHERE Company LIKE 'Pro%';
+
+
+--Joining all the tables together--
+
+SELECT DISTINCT * FROM sa_info
+JOIN sa_income_statement
+ON sa_info.ID = sa_income_statement.ID
+JOIN sa_balance_sheet
+ON sa_info.ID = sa_balance_sheet.ID
+JOIN sa_cash_flow_statement
+ON sa_info.ID = sa_cash_flow_statement.ID;
+
