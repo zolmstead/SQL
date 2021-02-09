@@ -146,6 +146,12 @@ UPDATE sa_info
 SET Company = 'Intel Corporation'
 WHERE ID = 6;
 
+SELECT * FROM sa_info
+WHERE Company LIKE 'Pro%';
+
+
+--Some basic analysis--
+
 SELECT DISTINCT * FROM sa_info
 WHERE Dividend_percent != 'N/A'
 AND Projected_ROI > '4.00%'
@@ -156,8 +162,16 @@ WHERE PE_Ratio BETWEEN 5 AND 15
 ORDER BY PE_Ratio ASC
 LIMIT 5;
 
-SELECT * FROM sa_info
-WHERE Company LIKE 'Pro%';
+SELECT * FROM sa_income_statement
+WHERE GPM > '40.00%'
+AND GPM != 'N/A'
+AND Net_Earnings > '20.00%'
+ORDER BY Net_Earnings DESC;
+
+SELECT Current_ratio, Retained_Earnings FROM sa_balance_sheet
+WHERE Current_ratio > 1
+AND Retained_Earnings > '20.00%'
+ORDER BY 1 DESC;
 
 
 --Joining all the tables together--
@@ -169,4 +183,6 @@ JOIN sa_balance_sheet
 ON sa_info.ID = sa_balance_sheet.ID
 JOIN sa_cash_flow_statement
 ON sa_info.ID = sa_cash_flow_statement.ID;
+
+
 
