@@ -1,0 +1,32 @@
+CREATE TABLE sa_info (
+    ID INTEGER,
+    Company TEXT,
+    Industry TEXT,
+    Ticker TEXT,
+    Projected_ROI VARCHAR(20),
+    PE_Ratio INTEGER,
+    Dividend_percent VARCHAR(20)
+);
+
+CREATE TABLE sa_income_statement (
+    ID INTEGER,
+    GPM VARCHAR(20),
+    Net_Earnings VARCHAR(20)
+);
+
+CREATE TABLE sa_balance_sheet (
+    ID INTEGER,
+    Current_ratio VARCHAR(20),
+    ROA VARCHAR(20),
+    LT_Debt VARCHAR(20),
+    Debt_Shareholders_Equity INTEGER,
+    Retained_Earnings VARCHAR(20),
+    ROE VARCHAR(20)
+);
+
+CREATE TABLE sa_cash_flow_statement (
+    ID INTEGER,
+    Stock_buybacks TEXT,
+    Free_cash_flow TEXT,
+    Net_income TEXT
+);
